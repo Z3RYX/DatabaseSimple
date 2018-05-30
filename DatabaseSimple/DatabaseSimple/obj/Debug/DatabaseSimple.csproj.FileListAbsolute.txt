@@ -1,0 +1,6 @@
+C:\Users\Shiro Choin\Documents\SharpDevelop Projects\DatabaseSimple\DatabaseSimple\obj\Debug\DatabaseSimple.csprojResolveAssemblyReference.cache
+C:\Users\Shiro Choin\Documents\SharpDevelop Projects\DatabaseSimple\DatabaseSimple\bin\Debug\DatabaseSimple.exe.config
+C:\Users\Shiro Choin\Documents\SharpDevelop Projects\DatabaseSimple\DatabaseSimple\bin\Debug\DatabaseSimple.exe
+C:\Users\Shiro Choin\Documents\SharpDevelop Projects\DatabaseSimple\DatabaseSimple\bin\Debug\DatabaseSimple.pdb
+C:\Users\Shiro Choin\Documents\SharpDevelop Projects\DatabaseSimple\DatabaseSimple\obj\Debug\DatabaseSimple.exe
+C:\Users\Shiro Choin\Documents\SharpDevelop Projects\DatabaseSimple\DatabaseSimple\obj\Debug\DatabaseSimple.pdb
