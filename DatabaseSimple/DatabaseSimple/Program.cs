@@ -21,19 +21,25 @@ namespace DatabaseSimple {
             	Console.Clear();
 		    
             	if(input=="/end" || input=="/exit") {
-			break;}
+			break;
+		}
 		    
             	if(input.Contains("/add")) {
 			Console.WriteLine("Enter title and then the info");
             		db.add(Console.ReadLine(), Console.ReadLine());
 			Console.Clear();
-               		continue;}
+               		continue;
+		}
 		    
             	if(input.Length>0) {
-            		db.search(input);}
+            		db.search(input);
+		}
 		    
             	else {
-            		Console.WriteLine("No input given");}}}
+            		Console.WriteLine("No input given");
+		}
+	    }
+	}
     class Database {
         public int ID = 0;
         string[] dataBaseID = new string[1000];
@@ -44,7 +50,9 @@ namespace DatabaseSimple {
             for(int i=0;i<1000;i++) {
                 dataBaseID[i] = "n/a";
                 dataBase[i,0] = "n/a";
-                dataBase[i,1] = "n/a";}}
+                dataBase[i,1] = "n/a";
+	    }
+	}
        
         //add data to dataBase
         public void add(string name = "n/a", string info = "n/a") {
@@ -52,7 +60,8 @@ namespace DatabaseSimple {
             dataBaseID[ID-1] = Convert.ToString(ID);
            
             dataBase[ID-1,0] = name;
-            dataBase[ID-1,1] = info;}
+            dataBase[ID-1,1] = info;
+	}
        
        //get data from dataBase
        public void search(string inp) {
@@ -60,21 +69,30 @@ namespace DatabaseSimple {
             for(int x=0;x<1000;x++) {
                 if(dataBaseID[x].Contains(inp)) {
                     if(dataBaseID[x]=="n/a") {
-			    continue;}
+			    continue;
+		    }
                     Console.WriteLine("Title: " + dataBase[x,0]);
                     Console.WriteLine("Info: " + dataBase[x,1]);
 		    //For debugging
                     //Console.WriteLine("ID: " + dataBaseID[x] + "\n\n");
-                    searchCount++;}
+                    searchCount++;
+		}
                 else if(dataBase[x,0].Contains(inp)) {
                     if(dataBaseID[x]=="n/a") {
-			    continue;}
+			    continue;
+		    }
                     Console.WriteLine("Title: " + dataBase[x,0]);
                     Console.WriteLine("Info: " + dataBase[x,1]);
 		    //For debugging
                     //Console.WriteLine("ID: " + dataBaseID[x] + "\n\n");
-                    searchCount++;}
+                    searchCount++;
+		}
                 else {
-		}}
+		}
+	    }
             if(searchCount==0) {
-		    Console.WriteLine("Nothing found");}}}}
+		    Console.WriteLine("Nothing found");
+	    }
+        }
+    }
+}
